@@ -1,0 +1,175 @@
+/******** Static HTML ********/
+/*@import "../assets/css/main.css";*/
+body {
+    font-size: 12pt;
+    width: auto;
+    text-align: left;
+    padding: 8px;
+}
+footer {
+    max-width: 40em;
+    margin: auto;
+    text-align: center;
+    margin-top: 4em;
+}
+
+/******** React ********/
+:root {
+    --slot-height: 2em;
+}
+/******** Slots component ********/
+.main {
+    display: flex;
+    flex-flow: row wrap;
+}
+.day {
+    flex: 1 1 25em;
+    margin: 0 4px;
+}
+.header {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 2px;
+}
+.slots {
+    position: relative;
+    height: calc(20 * var(--slot-height));
+    width: 100%;
+    background: repeating-linear-gradient(to bottom, #fafafa, #fafafa var(--slot-height),
+					  #fdfdfd var(--slot-height), #fdfdfd calc(2 * var(--$slot-height)));
+}
+
+
+/******** Typeahead component ********/
+.typeahead {
+    cursor: not-allowed;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0; left: 0;
+    width: 100%;
+}
+
+.typeahead .container {
+	cursor: default;
+	flex: 0 1 40em;
+	margin: 10px 40px;
+	background-color: white;
+	border: solid thin black;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 5px #444;
+	padding: 1ex;
+}
+
+.typeahead input {
+	width: 100%;
+	border: none;
+	border-bottom: solid thin #444;
+	font-size: 120%;
+	padding: 1ex;
+	box-sizing: border-box;
+	outline: none;
+}
+.li {
+    position: relative;
+    cursor: pointer;
+    border: dotted thin #aaa;
+    border-radius: 0.2em;
+}
+.li:hover {
+	background: blue;
+	color: white;
+	border: solid thin #888;
+}
+
+/******** Slot component ********/
+.slot {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    background-color: #fff;
+    height: var(--slot-height);
+    width: 100%;
+    border: dotted thin #aaa;
+    border-radius: calc(var(--slot-height) / 10);
+    box-sizing: border-box;
+}
+
+.slot:hover, .slot.selected {
+	border: solid thin #888;
+}
+.slot .time {
+	padding: 0 1ex;
+	color: #aaa;
+}
+.slot .info {
+	background-color: inherit;
+	overflow: hidden;
+}
+.taken {
+    cursor: not-allowed;
+    background-color: #fcc;
+}
+.editable {
+    cursor: pointer;
+}
+.taken.editable {
+    background-color: #ccf;
+}
+
+
+/******** Project component ********/
+@keyframes(scroll) {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(calc(-100% + 1.2em)); }
+    100% { transform: translateY(0); }
+}
+.project {
+    background-color: inherit;
+}
+.description {
+    line-height: 1.2em;
+}
+
+.slot .buttons {
+	background-color: inherit;
+	position: absolute;
+	padding: 2px 0 0 2px;
+	bottom: 2px; right: 2px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.slot:hover .buttons, .slot.selected .buttons {
+	opacity: 1;
+}
+.slot:hover .description, .slot.selected .description {
+	animation: scroll 3s linear infinite;
+}
+.li .buttons { text-align: right; }
+
+.icon {
+    display: inline-block;
+    color: transparent !important;
+    width: 1em; height: 1em;
+    margin: 0 1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.close {
+    background-image: url("cross.png");
+}
+.glitch {
+    background-image: url("glitch.ico");
+}
+.run {
+    background-image: url("run.png");    
+}
+.github {
+    background-image: url("github.png");
+}
+.source {
+    background-image: url("source.png");
+}
