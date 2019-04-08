@@ -14,7 +14,7 @@ const wsserver = new ws.Server({
 });
 
 /* Data */
-const groups = yaml.load('.data/groups.yml');
+const groups = yaml.load('groups.yml');
 const db = new DB();
 
 /* HTTP Server */
