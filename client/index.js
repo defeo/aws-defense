@@ -305,7 +305,7 @@ async function startApp() {
     // Initialise component with data from server
     let slots = window.slots = h(Slots, {
         db: new DB(new WebSocket(
-	    (window.location.scheme == 'https' ? 'wss://' : 'ws://')
+	    (window.location.protocol == 'https:' ? 'wss://' : 'ws://')
 		+ window.location.host)),
         projects: (await fetchProjects()).groups,
     });
