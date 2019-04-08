@@ -38,8 +38,10 @@ footer {
     position: relative;
     height: calc(20 * var(--slot-height));
     width: 100%;
-    background: repeating-linear-gradient(to bottom, #fafafa, #fafafa var(--slot-height),
-					  #fdfdfd var(--slot-height), #fdfdfd calc(2 * var(--$slot-height)));
+    background: repeating-linear-gradient(to bottom, #fafafa,
+					  #fafafa var(--slot-height),
+					  #fdfdfd var(--slot-height),
+					  #fdfdfd calc(2*var(--slot-height)));
 }
 
 

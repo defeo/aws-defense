@@ -1,19 +1,8 @@
 import { h, render, Component } from 'https://cdn.jsdelivr.net/npm/preact/dist/preact.mjs';
+import DB from './db.js';
 
 /******************************************************/
 class Project extends Component {
-    /*getDefaultProps: function() {
-      return {
-      gid: -1,
-      data: {
-      description: 'DOE John (demo project)',
-      workspace: null,
-      github: null
-      },
-      closeBtn: null,
-      };
-      },*/
-
     stopClick(e) {
 	if (e.target.tagName == "A") e.stopPropagation();
     }
@@ -26,7 +15,7 @@ class Project extends Component {
 	let github = this.props.data.github;
 	let source = this.props.data.source;
 	
-	return h('div', { class: "project" },
+	return h('div', { class: "project", onClick: this.props.onClick },
 	         h('div', { class: "description" }, this.props.data.description),
 	         h('div', { class: "buttons", onClick: this.stopClick.bind(this) },
 	           glitch
@@ -78,24 +67,12 @@ class Project extends Component {
 
 /******************************************************/
 class Slot extends Component {
-    //displayName: "Slot",
-    /*getDefaultProps: function() {
-	return {
-	    time: null,
-	    project: null,
-	    booking: null,
-	    auth: null,
-	    selected: false,
-	    empty: null,
-	}
-    },*/
-    
     taken() {
 	return !!this.props.booking;
     }
 
     editable() {
-	return !this.props.booking || this.props.booking.uid == (this.props.auth && this.props.auth.uid);
+	return !this.props.booking || (this.props.booking.uid == this.props.auth);
     }
 
     mine() {
@@ -144,13 +121,6 @@ class Typeahead extends Component {
 	};
     }
     
-    /*    getDefaultProps: function() {
-	  return {
-	  projects: {},
-	  callback: false,
-	  };
-          },*/
-
     getActive() {
 	return Object.keys(this.props.projects).reduce((comps, gid) => {
 	    let p = this.props.projects[gid];
@@ -221,53 +191,26 @@ class Slots extends Component {
     constructor() {
         super();
 	this.state = {
-	    slots : [
-		{ booking: { gid: "17", uid: "github:1315842" }, time: "2018-05-28T07:00:00.000Z" },
-		{ booking: { } , time: "2018-05-28T07:30:00.000Z" }
-	    ],
+	    slots : [],
 	    auth : null,
 	    selected: null,
 	    showList: document.location.hash == '#list',
 	};
     }
 
-    /*    getDefaultProps() {
-	  return {
-	  db: null,
-	  projects: {},
-	  };
-          }*/
-
-    setCalendar(start, increments) {
+    /*setCalendar(start, increments) {
 	let slots = increments.map((i) => ({ time: new Date(start + i) }));
 	console.log(slots);
 	return this.props.db.update({ slots: slots });
-    }
+    }*/
     
     componentDidMount() {
-        /*
-	  this.props.db.on('value', (function(snapshot) {
-	  var state = snapshot.val()
-	  console.log("got data", state);
-	  this.setState(state);
-	  }).bind(this));
+	this.setState(this.props.db.data);
+	this.props.db.ws.addEventListener('db.newdata', (e) => {
+	    console.log("got data", e.detail);
+	    this.setState(this.props.db.data);
+	});
 	  
-	  var authCb = (function(error, auth) {
-	  if (error) {
-	  console.log(error);
-	  } else {
-	  console.log('Authenticated as: ', auth.uid);
-	  this.setState({ auth: auth });
-	  }
-	  }).bind(this);
-	  this.props.db.onAuth((function(auth) {
-	  if (!auth) {
-	  this.props.db.authAnonymously(authCb);
-	  } else {
-	  authCb(null, auth);
-	  }
-	  }).bind(this));*/
-
 	window.addEventListener('hashchange', this.handleHash.bind(this));
     }
     
@@ -275,17 +218,12 @@ class Slots extends Component {
 	if (editable) {
 	    this.setState({
 		selected: null,
-		showList: (function(gid) {
+		showList: (gid) => {
 		    if (gid !== null) {
-			this.props.firebase.child("slots/" + id).update({
-			    booking: {
-				uid: this.state.auth && this.state.auth.uid,
-				gid: gid,
-			    }
-			});
+			this.props.db.update(id, gid);
 		    }
 		    this.setState({ showList: false });
-		}).bind(this)
+		}
 	    });
 	} else {
 	    this.setState({ selected: id });
@@ -293,7 +231,7 @@ class Slots extends Component {
     }
 
     empty(id) {
-	this.props.firebase.child("slots/" + id + "/booking").remove();
+	this.props.db.free(id);
     }
 
     handleHash() {
@@ -326,9 +264,9 @@ class Slots extends Component {
 	let groups = [];
 	days.forEach((slots, day) =>
 	             groups.push(
-                         h('div', { class: "day", key: day }),
-		         h('div', { class: "header" }, day),
-		         h('div', { class: "slots" }, slots)));
+                         h('div', { class: "day", key: day },
+		           h('div', { class: "header" }, day),
+		           h('div', { class: "slots" }, slots))));
         
 	return h('div', {},
 	         h('div', { class: "main" }, groups),
@@ -366,7 +304,9 @@ async function fetchProjects() {
 async function startApp() {
     // Initialise component with data from server
     let slots = window.slots = h(Slots, {
-        db: null,
+        db: new DB(new WebSocket(
+	    (window.location.scheme == 'https' ? 'wss://' : 'ws://')
+		+ window.location.host)),
         projects: (await fetchProjects()).groups,
     });
 
