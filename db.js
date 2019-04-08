@@ -33,11 +33,30 @@ module.exports = class DB extends EventEmitter {
 	    throw Error('Invalid slot: ' + slot);
 	}
     }
+    
+    lock(slot) {
+	let sl = this.db.get(['slots', slot, 'booking']).set('uid', '---').write();
+    }
+
+    lock_all() {
+	this.db.get('slots')
+	    .filter('booking')
+	    .forEach((s) => s.booking.uid = '---')
+	    .write();
+    }
 
     get() {
 	return this.db.getState();
     }
 
+    toString() {
+	return this.db.get('slots')
+	    .map((s, i) =>
+		 `${i}\t(${new Date(s.time).toLocaleString()}): ${s.booking?JSON.stringify(s.booking):''}`)
+	    .value()
+	    .join('\n');
+    }
+    
     set(state) {
 	this.db.setState();
     }
