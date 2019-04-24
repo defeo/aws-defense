@@ -1,99 +1,104 @@
 groups:
   1:
     project: Tron
-    glitch: 
+    glitch: some-snake-v2
 
   2:
     project: Post-it
-    glitch: 
+    glitch: post-it-new
 
   3:
     project: Dames
-    glitch: 
+    glitch: projet-dame-teboul-tornezy-daniel-iatic4
 
   4:
     project: Dames
-    glitch: 
+    glitch: jeu-dame-helo-leia
 
   5:
     project: Slides
-    glitch: 
+    glitch: regal-zone
 
   6:
     project: Dames
-    glitch: 
+    glitch: madame
 
   7:
     project: Dames
-    glitch: 
+    glitch: poised-nylon
 
   8:
     project: Dames
-    glitch: 
+    glitch: jeu-des-dames-olivia
 
   9:
     project: Tron
-    glitch: 
+    glitch: armand-couzinet-tron-aws-iatic4
 
   10:
     project: Dames
-    glitch: 
+    glitch: dame-projet
 
   11:
     project: Dames
-    glitch: 
+    glitch: projet-dame-iati4
 
   12:
     project: Dames
-    glitch: 
+    glitch: dames-2
 
   13:
     project: Dames
-    glitch: 
+    glitch: dameproject
 
   14:
     project: Dames
-    glitch: 
+    glitch: married-chameleon
 
   15:
     project: Post-it
-    glitch: 
+    glitch: responsible-justice
 
   16:
     project: Dames
-    glitch: 
+    glitch: helix-jersey
 
   17:
     project: Dames
-    glitch: 
+    glitch: projet-web-itsi
     
   18:
     project: Post-it
-    glitch: 
+    glitch: obsidian-elbow
     
   19:
     project: Dames
-    glitch: 
+    glitch: mfs
     
   20:
     project: Dames
-    glitch: 
+    glitch: dames-pragassam-thebault
     
   21:
     project: Post-it
-    glitch: 
+    glitch: project-postit
     
   22:
     project: Post-it
-    glitch: 
+    glitch: blt-rkt-post-it
     
   23:
     project: Dames
-    glitch: 
+    glitch: 3asba-3elasormek
+    github: ilyesAj/dames
     
   24:
     project: Dames
-    glitch: 
+    glitch: fallacious-emery
+    
+  25:
+    project: Slides
+    glitch: slides-diop-sidibe
     
 students:
   - nom: AAJLI
@@ -158,7 +163,7 @@ students:
 
   - nom: DIOP
     prenom: Papa Amadou
-    group: 0
+    group: 25
 
   - nom: DONA
     prenom: Alessandro
@@ -278,7 +283,7 @@ students:
 
   - nom: SIDIBE
     prenom: Mouhamadou Moustapha
-    group: 0
+    group: 25
 
   - nom: SOURI
     prenom: Mohamed Firas
