@@ -58,7 +58,7 @@ module.exports = class DB extends EventEmitter {
     }
     
     set(state) {
-	this.db.setState();
+	this.db.setState(state);
     }
 }
 
