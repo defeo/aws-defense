@@ -1,306 +1,297 @@
 groups:
   1:
-    project: Tron
-    glitch: some-snake-v2
-
-  2:
-    project: Post-it
-    glitch: post-it-new
-
-  3:
     project: Dames
-    glitch: projet-dame-teboul-tornezy-daniel-iatic4
-
+    glitch: 
+    
+  2:
+    project: Dames
+    glitch: 
+    
+  3:
+    project: Post-it
+    glitch: 
+    
   4:
     project: Dames
-    glitch: jeu-dame-helo-leia
-
+    glitch: 
+    
   5:
-    project: Slides
-    glitch: regal-zone
-
+    project: Post-it
+    glitch: 
+    
   6:
-    project: Dames
-    glitch: madame
-
+    project: Slides
+    glitch: 
+    
   7:
     project: Dames
-    glitch: poised-nylon
-
+    glitch: 
+    
   8:
     project: Dames
-    glitch: jeu-des-dames-olivia
-
+    glitch: 
+    
   9:
-    project: Tron
-    glitch: armand-couzinet-tron-aws-iatic4
-
+    project: Post-it
+    glitch: 
+    
   10:
     project: Dames
-    glitch: dame-projet
-
+    glitch: 
+    
   11:
     project: Dames
-    glitch: projet-dame-iati4
-
+    glitch: 
+    
   12:
-    project: Dames
-    glitch: dames-2
-
+    project: Post-it
+    glitch: 
+    
   13:
     project: Dames
-    glitch: dameproject
-
+    glitch: 
+    
   14:
-    project: Dames
-    glitch: married-chameleon
-
+    project: Post-it
+    glitch: 
+    
   15:
     project: Post-it
-    glitch: responsible-justice
-
+    glitch: 
+    
   16:
     project: Dames
-    glitch: helix-jersey
-
+    glitch: 
+    
   17:
     project: Dames
-    glitch: projet-web-itsi
+    glitch: 
     
   18:
     project: Post-it
-    glitch: obsidian-elbow
+    glitch: 
     
   19:
-    project: Dames
-    glitch: mfs
+    project: ??
+    glitch: 
     
   20:
-    project: Dames
-    glitch: dames-pragassam-thebault
+    project: ??
+    glitch: 
     
   21:
     project: Post-it
-    glitch: project-postit
+    glitch: 
     
   22:
-    project: Post-it
-    glitch: blt-rkt-post-it
-    
-  23:
     project: Dames
-    glitch: 3asba-3elasormek
-    github: ilyesAj/dames
-    
-  24:
-    project: Dames
-    glitch: fallacious-emery
-    
-  25:
-    project: Slides
-    glitch: slides-diop-sidibe
+    glitch: 
     
 students:
-  - nom: AAJLI
-    prenom: Hamid
-    group: 0
-
-  - nom: ANNOCQUE
-    prenom: Come
-    group: 7
-
-  - nom: ARMAND
-    prenom: Louison
-    group: 9
-
-  - nom: AYOUB
-    prenom: Pierre
-    group: 11
-
-  - nom: BAROTIN
-    prenom: Alexis
-    group: 13
-
-  - nom: BESBES
-    prenom: Iheb
-    group: 18
-
-  - nom: BLOT
-    prenom: Nicolas
-    group: 22
-
-  - nom: BONNAFOUS
-    prenom: Camille
-    group: 21
-
-  - nom: CALEM
-    prenom: Lea
-    group: 1
-
-  - nom: CHAARI
-    prenom: Iteb
-    group: 17
-
-  - nom: CHEBERLI
-    prenom: Iyed
-    group: 23
-
-  - nom: COELHO
-    prenom: O Nice
-    group: 24
-
-  - nom: CONIN
-    prenom: Elisa
-    group: 7
-
-  - nom: COUZINET
-    prenom: Romain
-    group: 9
-
-  - nom: DAHBY
-    prenom: Younes
-    group: 10
-
-  - nom: DIOP
-    prenom: Papa Amadou
-    group: 25
-
-  - nom: DONA
-    prenom: Alessandro
-    group: 8
-
-  - nom: DOYEN
-    prenom: Heloise
-    group: 4
-
-  - nom: EL AJROUD
-    prenom: Mohamed Ilyes
-    group: 23
-
-  - nom: FAKHFAKH
-    prenom: Sami
-    group: 18
-
-  - nom: FLAMANT
-    prenom: Oceane
-    group: 11
-
-  - nom: FRIGUI
-    prenom: Dorsaf
-    group: 21
-
-  - nom: GAILLARD
-    prenom: Robin
-    group: 13
-
-  - nom: GONIDEC
-    prenom: Leia
-    group: 4
-
-  - nom: GUEMMI
-    prenom: Kawtar
-    group: 15
-
-  - nom: HAMMAMI
-    prenom: Sirine
-    group: 17
-
-  - nom: ISLAHI
-    prenom: Safwan
-    group: 0
-
-  - nom: JALLED
-    prenom: Chaima
-    group: 16
-
-  - nom: JOOBER
-    prenom: Cyrine
-    group: 12
-
-  - nom: JULLIEN
-    prenom: Lois
-    group: 6
-
-  - nom: JULLIENNE
-    prenom: Jeremy
-    group: 24
-
-  - nom: KANA ZEBAZE
-    prenom: Wareine Kyndra
-    group: 2
-
-  - nom: LAMOTTE
-    prenom: Mickael
-    group: 10
-
-  - nom: LE FEBVRE DE NAILLY
-    prenom: Christine
-    group: 1
-
-  - nom: LEFEVRE
-    prenom: Clement
-    group: 5
-
-  - nom: LEGA
-    prenom: Gnadou-Othniel
-    group: 0
-
-  - nom: LENORMAND
-    prenom: Olivia
-    group: 8
-
-  - nom: NGOMPAZA REKOULA
-    prenom: Lynda Karen Anthonya
-    group: 2
-
-  - nom: NGUYEN
-    prenom: Khuong-Duy
-    group: 14
-
-  - nom: PRAGASSAM
-    prenom: Valentin
-    group: 20
-
-  - nom: RAKOTOZANANY
-    prenom: Andriamananjaka Step
-    group: 22
-
-  - nom: ROUXEL
-    prenom: Mael
-    group: 14
-
-  - nom: SAIDI
-    prenom: Omar
-    group: 15
-
-  - nom: SATOURI
-    prenom: Mayssa
-    group: 16
-
-  - nom: SAUVEE
-    prenom: Etienne
-    group: 6
-
-  - nom: SIDIBE
-    prenom: Mouhamadou Moustapha
-    group: 25
-
-  - nom: SOURI
-    prenom: Mohamed Firas
-    group: 19
-
-  - nom: TEBOUL-TORNEZY
-    prenom: Daniel
+  - nom: ABED
+    prenom: Amir Chawki
     group: 3
 
-  - nom: THEBAULT
-    prenom: Florent
+  - nom: ALSHARA
+    prenom: Kotaiba
+    group: 18
+
+  - nom: ARAB
+    prenom: Terkia
+    group: 22
+
+  - nom: BABAEDJOU
+    prenom: Ziadath
+    group: 10
+
+  - nom: BARRY
+    prenom: Thierno Abdoulaye
+    group: 12
+
+  - nom: BASKEVITCH
+    prenom: Claire-Alexandra
+    group: 4
+
+  - nom: BEN AMMAR
+    prenom: Belkacem
+    group: 22
+
+  - nom: BESSAC
+    prenom: Tristan
+    group: 4
+
+  - nom: BOUDO
+    prenom: Ibrahim
+    group: 17
+
+  - nom: CARBONNIER
+    prenom: Nicolas
+    group: 1
+
+  - nom: CAUMES
+    prenom: Clement
+    group: 2
+
+  - nom: CHAKRI
+    prenom: Mohamed Raouf Abdelg
+    group: 14
+
+  - nom: DESQUAIRES
+    prenom: Joseph
+    group: 8
+
+  - nom: DOUDOUH
+    prenom: Yassin
+    group: -1
+
+  - nom: DUFOUR
+    prenom: Arnaud
     group: 20
 
-  - nom: VERDURE
-    prenom: Pierre
+  - nom: EL ASSRI
+    prenom: Aziz
+    group: -1
+
+  - nom: ELKAEL
+    prenom: Maxime
+    group: 13
+
+  - nom: FARHI
+    prenom: Abdellah
+    group: 21
+
+  - nom: FOLLY
+    prenom: Jean-Paul
+    group: -1
+
+  - nom: FOUASSIER
+    prenom: Edouard
+    group: 16
+
+  - nom: GUILLOT
+    prenom: Benjamin
     group: 5
 
-  - nom: YAKDI
-    prenom: Zakaria
+  - nom: HAMI
+    prenom: Syphax
+    group: 14
+
+  - nom: HEQUET
+    prenom: Jonathan
+    group: 7
+
+  - nom: ILYASS
+    prenom: Hamza
+    group: -1
+
+  - nom: KARAKHOU
+    prenom: Marouane
+    group: -1
+
+  - nom: KARIMI
+    prenom: Mohsen
+    group: 9
+
+  - nom: KHELIF
+    prenom: Mohammed
+    group: 21
+
+  - nom: KONE
+    prenom: N Goman Tohaerou
+    group: 19
+
+  - nom: KOURDACHE
+    prenom: Missipssa
+    group: -1
+
+  - nom: LARCHER
+    prenom: Thibaud
+    group: 20
+
+  - nom: LIU
+    prenom: Bin
+    group: 19
+
+  - nom: LY
+    prenom: Secouba
+    group: 11
+
+  - nom: MAAROUFI
+    prenom: Aymane
+    group: 18
+
+  - nom: MARTIN
+    prenom: Laureline
+    group: 5
+
+  - nom: MARTY
+    prenom: Benjamin
+    group: -1
+
+  - nom: MBA KOUHOUE
+    prenom: Joel
     group: 12
+
+  - nom: MTALSI
+    prenom: Mehdi
+    group: 2
+
+  - nom: NAVARRO
+    prenom: Remi
+    group: 16
+
+  - nom: NIANG
+    prenom: Ndeye Fatou
+    group: 8
+
+  - nom: OUEDRAOGO
+    prenom: Jamile Jean Luc
+    group: 6
+
+  - nom: OUTAYEB
+    prenom: Katia
+    group: -1
+
+  - nom: PHO
+    prenom: Ngoc-Mai
+    group: 11
+
+  - nom: QEHOUI
+    prenom: Hajare
+    group: 10
+
+  - nom: RAMAROSON
+    prenom: Andritsalama Hanitri
+    group: 15
+
+  - nom: ROBIN
+    prenom: Joran
+    group: 13
+
+  - nom: SHAFIEI TEHRANI
+    prenom: Seyedeh Saba
+    group: 9
+
+  - nom: SLIMANI
+    prenom: Arezki
+    group: 17
+
+  - nom: SOTTAS
+    prenom: Jean-Charles
+    group: 1
+
+  - nom: SUNYE
+    prenom: Jean-Charles
+    group: 7
+
+  - nom: TARABAY
+    prenom: Mariane
+    group: 15
+
+  - nom: TRAORE
+    prenom: Wilfried Ben Rachid
+    group: 6
+
+  - nom: ZHANG
+    prenom: Tongjian
+    group: 3
