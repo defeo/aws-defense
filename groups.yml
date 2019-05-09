@@ -91,6 +91,10 @@ groups:
     project: Post-it
     glitch: 
     
+  24:
+    project: Post-it
+    glitch: 
+    
 students:
   - nom: ABED
     prenom: Amir Chawki
@@ -254,7 +258,7 @@ students:
 
   - nom: OUTAYEB
     prenom: Katia
-    group: -1
+    group: 24
 
   - nom: PHO
     prenom: Ngoc-Mai
