@@ -95,6 +95,10 @@ groups:
     project: Post-it
     glitch: 
     
+  25:
+    project: Post-it
+    glitch: 
+    
 students:
   - nom: ABED
     prenom: Amir Chawki
@@ -158,7 +162,7 @@ students:
 
   - nom: EL ASSRI
     prenom: Aziz
-    group: -1
+    group: 25
 
   - nom: ELKAEL
     prenom: Maxime
