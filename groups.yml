@@ -87,6 +87,10 @@ groups:
     project: Dames
     glitch: 
     
+  23:
+    project: Post-it
+    glitch: 
+    
 students:
   - nom: ABED
     prenom: Amir Chawki
@@ -182,11 +186,11 @@ students:
 
   - nom: ILYASS
     prenom: Hamza
-    group: -1
+    group: 23
 
   - nom: KARAKHOU
     prenom: Marouane
-    group: -1
+    group: 23
 
   - nom: KARIMI
     prenom: Mohsen
