@@ -99,6 +99,10 @@ groups:
     project: Post-it
     glitch: 
     
+  26:
+    project: Post-it
+    glitch: 
+    
 students:
   - nom: ABED
     prenom: Amir Chawki
@@ -154,7 +158,7 @@ students:
 
   - nom: DOUDOUH
     prenom: Yassin
-    group: -1
+    group: 26
 
   - nom: DUFOUR
     prenom: Arnaud
@@ -214,7 +218,7 @@ students:
 
   - nom: KOURDACHE
     prenom: Missipssa
-    group: -1
+    group: 26
 
   - nom: LARCHER
     prenom: Thibaud
