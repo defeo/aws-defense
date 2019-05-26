@@ -1,107 +1,109 @@
 groups:
   1:
     project: Dames
-    glitch: 
+    glitch: shelled-carp-jeu-dame
     
   2:
     project: Dames
-    glitch: 
+    glitch: play-checkers
     
   3:
     project: Post-it
-    glitch: 
+    glitch: projet-post-it
     
   4:
     project: Dames
-    glitch: 
+    glitch: dame-bc-bt
     
   5:
     project: Post-it
-    glitch: 
+    glitch: lauben-aws-postit
     
   6:
     project: Slides
-    glitch: 
+    glitch: slidesaws
     
   7:
     project: Dames
-    glitch: 
+    glitch: picturesque-side
     
   8:
     project: Dames
-    glitch: 
+    glitch: projetjeu2dames
+    source: 'https://glitch.com/~sable-farm'
     
   9:
     project: Post-it
-    glitch: 
-    
+    github: uvsq21801511/postit_prg
+
   10:
     project: Dames
-    glitch: 
+    glitch: tundra-sheep
     
   11:
     project: Dames
-    glitch: 
+    glitch: m1-uvsq-projet-aws
     
   12:
     project: Post-it
-    glitch: 
+    glitch: post-it-barry-mba
     
   13:
     project: Dames
-    glitch: 
+    glitch: projet-aws-maxime-joran
     
   14:
     project: Post-it
-    glitch: 
+    github: ChakriMohamed/POSTIT
     
   15:
     project: Post-it
-    glitch: 
+    glitch: prweb
     
   16:
     project: Dames
-    glitch: 
+    glitch: aws-project
     
   17:
     project: Dames
-    glitch: 
+    glitch: awsdame
+    github: mortexsa/AwsDame
     
   18:
     project: Post-it
-    glitch: 
+    source: 'https://bitbucket.org/uvsq21800845/stickynotes-aws'
     
   19:
-    project: ??
-    glitch: 
+    project: Dames
+    glitch: jeuxdedames
     
   20:
     project: Dames
-    glitch: 
+    glitch: aws-projet-dames-tl-ad
     
   21:
     project: Post-it
-    glitch: 
+    source: 'https://bitbucket.org/uvsq21505683/post-it'
     
   22:
     project: Dames
-    glitch: 
+    source: 'https://gitlab.com/Bylka/dames'
     
   23:
     project: Post-it
-    glitch: 
+    glitch: ourpostit
     
   24:
     project: Post-it
-    glitch: 
+    github: katiaOutayeb/StickyNotes
     
   25:
     project: Post-it
-    glitch: 
+    glitch: projet-post
     
   26:
     project: Post-it
-    glitch: 
+    glitch: post-itt
     
 students:
   - nom: ABED
