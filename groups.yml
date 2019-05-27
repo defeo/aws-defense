@@ -104,7 +104,11 @@ groups:
   26:
     project: Post-it
     glitch: post-itt
-    
+
+  27:
+    project: Dames
+    glitch: woolen-motion
+
 students:
   - nom: ABED
     prenom: Amir Chawki
@@ -244,7 +248,7 @@ students:
 
   - nom: MARTY
     prenom: Benjamin
-    group: -1
+    group: 27
 
   - nom: MBA KOUHOUE
     prenom: Joel
